@@ -89,67 +89,53 @@ gement-system
 ```
 
 ### 2) Install Dependencies
-Backend
+```Backend
 cd server
 npm install
+```
 
-Frontend
+```Frontend
 cd klient
 npm install
-
+```
 
 ## ⚙️ Configuration
 
 Create a .env file in both the backend and frontend directories with necessary environment variables, for example:
 
 # Backend (.env)
+```
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 CLERK_SECRET=your_clerk_api_secret
 STRIPE_SECRET_KEY=your_stripe_secret_key
-
+```
 # Frontend (.env)
+```
 REACT_APP_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
 REACT_APP_STRIPE_KEY=your_stripe_public_key
-
-
+```
 
 
 ## ▶️ Running Locally
-Backend
+```Backend
 cd server
 npm start
-
+```
 
 Backend runs by default at:
 
 http://localhost:5000
 
-Frontend
+```Frontend
 cd klient
 npm start
-
+```
 
 Frontend runs by default at:
 
 http://localhost:3000
 
-
-
-## 🔌 API Endpoints (Example)
-
-(These are representative — modify based on your actual API.)
-
-Get Courses
-GET /api/courses
-
-Enroll in Course
-POST /api/enroll
-Content-Type: application/json
-
-{
-  "courseId": "1234"
-}
 
 
 ## 🎯 Deployment
